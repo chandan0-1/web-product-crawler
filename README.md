@@ -81,6 +81,22 @@ The crawler saves results in output/results.json:
 }
 ```
 
+## Deployment
+4. Trigger the Workflow
+    1. Go to the Actions tab in GitHub repository.
+    2. Select the Product URL Crawler workflow.
+    3. Click the Run workflow button on the right-hand side.
+
+        <img width="800" alt="Screenshot 2025-01-11 at 11 53 05 AM" src="https://github.com/user-attachments/assets/22eec408-a685-4463-ba7e-c66694c680ae" />
+
+5. Access the Output
+    1. Once the workflow completes, go to the Actions tab.
+    2. Select the latest workflow run.
+    3. Under the Artifacts section, download the crawler-results artifact, which contains the results.json file.
+       
+      <img width="1512" alt="Screenshot 2025-01-11 at 11 53 40 AM" src="https://github.com/user-attachments/assets/2ea7a4da-29f1-457d-97ee-eeb6f45396c1" />
+
+
 ## Configuration
 1. Rate Limiting
 Set the maximum number of concurrent requests in utils/scraper.py:

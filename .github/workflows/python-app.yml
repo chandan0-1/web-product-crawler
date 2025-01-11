@@ -1,0 +1,29 @@
+name: Product URL Crawler
+
+on:
+  workflow_dispatch:  # Enable manual trigger
+
+jobs:
+  run-crawler:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install Dependencies
+      run: pip install -r requirements.txt
+
+    - name: Run Crawler
+      run: python main.py
+
+    - name: Upload Output
+      uses: actions/upload-artifact@v3
+      with:
+        name: crawler-results
+        path: output/results.json

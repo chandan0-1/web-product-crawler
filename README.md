@@ -3,6 +3,9 @@ README: E-Commerce Product URL Crawler
 ## Overview
 This project implements a web crawler for discovering product URLs on e-commerce websites. It intelligently handles nested URLs, supports rate limiting, and respects a time limit for crawling each domain.
 
+* Video Recording for the quick overview
+https://www.loom.com/share/de5339452ff7469fa6a73284addb4216
+
 ## Features
 * **Domain-Specific Patterns** : Detects product URLs using domain-specific heuristics.
 * **Nested URL Crawling** : Recursively crawls pages to discover deeply nested product URLs.
@@ -14,11 +17,6 @@ This project implements a web crawler for discovering product URLs on e-commerce
 
 1. Prerequisites
 Python 3.7 or above.
-Install required Python packages:
-
-```bash 
-pip install -r requirements.txt
-```
 
 2. Clone the Repository
 
@@ -26,8 +24,13 @@ pip install -r requirements.txt
 git clone git@github.com:chandan0-1/web-product-crawler.git
 cd web-product-crawler
 ```
+3. Install required Python packages:
 
-3. Directory Structure
+```bash 
+pip install -r requirements.txt
+```
+
+4. Directory Structure
 ```graphql
 web-product-crawler/
 ├── main.py              # Entry point of the application
@@ -97,7 +100,7 @@ TIME_LIMIT = 120  # Default is 120 seconds (2 minutes)
 Control the maximum depth of recursive crawling:
 
 ```python3
-max_depth=3  # Adjust in the crawl_domain function
+max_depth = 3  # Adjust in the crawl_domain function
 ```
 
 

@@ -1,5 +1,6 @@
 README: E-Commerce Product URL Crawler
 
+
 ## Overview
 This project implements a web crawler for discovering product URLs on e-commerce websites. It intelligently handles nested URLs, supports rate limiting, and respects a time limit for crawling each domain.
 
